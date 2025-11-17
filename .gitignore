@@ -1,0 +1,30 @@
+# IDE and build files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Node (if ever used)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Python (if ever used)
+__pycache__/
+*.py[cod]
+.env
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Backups
+*.backup
+*.bak
+*-old.*

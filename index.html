@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متابعة - لوحة القيادة</title>
+    <link rel="stylesheet" href="exact-dashboard.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Top Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">🔴</span>
+                    <span class="logo-text">متابعة على</span>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            <div class="header-search">
+                <input type="text" class="search-input" placeholder="ابحث عن مستخدم منطقة أو مؤسسة...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="header-right">
+                <button class="notification-btn">🔔</button>
+                <button class="profile-btn">👤</button>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Right Sidebar -->
+            <aside class="right-sidebar">
+                <div class="sidebar-section">
+                    <h3>لوحة التحكم</h3>
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-link active" data-view="overview">📊 نظرة عامة</a></li>
+                        <li><a href="#" class="nav-link" data-view="beneficiaries">👥 المستفيدين</a></li>
+                        <li><a href="#" class="nav-link" data-view="volunteers">⭐ المتطوعون</a></li>
+                        <li><a href="#" class="nav-link" data-view="management">🗂️ الإدارة</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>الخيارات</h3>
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-link" data-view="reports">📈 التقارير</a></li>
+                        <li><a href="#" class="nav-link" data-view="settings">⚙️ الإعدادات</a></li>
+                        <li><a href="#" class="nav-link" data-view="messages">💬 الرسائل</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <div id="view-overview" class="view active">
+                <!-- Top Stats -->
+                <div class="top-stats">
+                    <div class="stat-box">
+                        <div class="stat-info">
+                            <h4>إجمالي المستفيدين</h4>
+                            <p class="stat-number">1,250</p>
+                        </div>
+                        <div class="stat-icon">👥</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-info">
+                            <h4>تحديثات بانتظار الموافقة</h4>
+                            <p class="stat-number">48</p>
+                        </div>
+                        <div class="stat-icon">📋</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-info">
+                            <h4>المتطوعون النشطين</h4>
+                            <p class="stat-number">76</p>
+                        </div>
+                        <div class="stat-icon">⭐</div>
+                    </div>
+                </div>
+
+                <!-- Main Grid Container -->
+                <div class="grid-container">
+                    <!-- Left Column -->
+                    <div class="left-column">
+                        <!-- Performance Metrics -->
+                        <section class="card performance-section">
+                            <h2>مؤشرات الأداء الرئيسية</h2>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <div class="metric-top">
+                                        <span class="metric-name">نسبة المستفيدين دون بيانات المحافظ</span>
+                                        <span class="metric-value">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill green" style="width: 85%"></div>
+                                    </div>
+                                    <p class="metric-sub">312 استخدمت/ 400</p>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-top">
+                                        <span class="metric-name">موضوعة للتدقيق</span>
+                                        <span class="metric-value">5.2 أيام</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill red" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-top">
+                                        <span class="metric-name">عدد الوثائق المتقدمة</span>
+                                        <span class="metric-value">13 ساعة</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Leaderboard -->
+                        <section class="card leaderboard-section">
+                            <h2>نظرة عامة على المتطوعين</h2>
+                            <div class="ranking-list">
+                                <div class="rank-item rank-1">
+                                    <span class="rank-number">#1</span>
+                                    <img src="https://via.placeholder.com/45" alt="User" class="rank-avatar">
+                                    <div class="rank-info">
+                                        <p class="rank-name">خالد القاسمي</p>
+                                        <p class="rank-status">صفة معتمدة</p>
+                                    </div>
+                                </div>
+                                <div class="rank-item rank-2">
+                                    <span class="rank-number">#2</span>
+                                    <img src="https://via.placeholder.com/45" alt="User" class="rank-avatar">
+                                    <div class="rank-info">
+                                        <p class="rank-name">مريم المحمود</p>
+                                        <p class="rank-status">صفة معتمدة</p>
+                                    </div>
+                                </div>
+                                <div class="rank-item rank-3">
+                                    <span class="rank-number">#3</span>
+                                    <img src="https://via.placeholder.com/45" alt="User" class="rank-avatar">
+                                    <div class="rank-info">
+                                        <p class="rank-name">عبدالله الراشدي</p>
+                                        <p class="rank-status">صفة معتمدة</p>
+                                    </div>
+                                </div>
+                                <div class="rank-item rank-4">
+                                    <span class="rank-number">#4</span>
+                                    <img src="https://via.placeholder.com/45" alt="User" class="rank-avatar">
+                                    <div class="rank-info">
+                                        <p class="rank-name">نور المطيري</p>
+                                        <p class="rank-status">صفة معتمدة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="right-column">
+                        <!-- Beneficiary Indicators -->
+                        <section class="card indicators-section">
+                            <h2>مؤشرات المستفيدين</h2>
+                            <div class="indicators">
+                                <div class="indicator-item">
+                                    <p class="indicator-label">نسبة المستفيدين دون بيانات المحافظ</p>
+                                    <p class="indicator-number">85%</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill green" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="indicator-item">
+                                    <p class="indicator-label">وثائق مرفوعة بانتظار التحقق</p>
+                                    <p class="indicator-number">312</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill green" style="width: 78%"></div>
+                                    </div>
+                                </div>
+                                <div class="indicator-item">
+                                    <p class="indicator-label">عدد المستفيدين النشطاء</p>
+                                    <p class="indicator-number">940%</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill green" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Management Tasks -->
+                        <section class="card management-section">
+                            <h2>إدارة القوائم</h2>
+                            <div class="management-grid">
+                                <div class="task-card" onclick="openDetails('تحديث بيانات العائلة الحالية', 'تحديث بيانات المستفيدين والتحقق منها')">
+                                    <span class="task-icon">🏢</span>
+                                    <h4>تحديث بيانات العائلة الحالية</h4>
+                                    <p>تحديث بيانات المستفيدين والتحقق منها</p>
+                                </div>
+                                <div class="task-card" onclick="openDetails('تحديث الملفات البريدية', 'إضافة في الشهر الماضي')">
+                                    <span class="task-icon">📝</span>
+                                    <h4>تحديث الملفات البريدية للمجموعة</h4>
+                                    <p>إضافة في الشهر الماضي</p>
+                                </div>
+                                <div class="task-card" onclick="openDetails('تحديث تسجيل البيانات', 'تحديث ملخص المشاركات')">
+                                    <span class="task-icon">✅</span>
+                                    <h4>تحديث تسجيل بيانات الحديقة</h4>
+                                    <p>تحديث ملخص المشاركات</p>
+                                </div>
+                                <div class="task-card" onclick="openDetails('إرسال سجلات الموافقة', 'الإرسال في القطاعة')">
+                                    <span class="task-icon">📊</span>
+                                    <h4>إرسال سجلات موافقة النقل</h4>
+                                    <p>الإرسال في القطاعة</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Organization Indicators -->
+                        <section class="card organization-section">
+                            <h2>مؤشرات المنظمة</h2>
+                            <div class="organization-list">
+                                <div class="organization-item">
+                                    <p class="organization-label">وقت معالجة الطلبات (بيوم/ساعة)</p>
+                                    <span class="organization-value">12 ساعة</span>
+                                </div>
+                                <div class="organization-item">
+                                    <p class="organization-label">نسبة الوثائق المجازة المحفوظة</p>
+                                    <span class="organization-value">940%</span>
+                                </div>
+                                <div class="organization-item">
+                                    <p class="organization-label">عدد المتطوعين النشطاء بالمنطقة</p>
+                                    <span class="organization-value">25</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Beneficiaries Table -->
+                <section class="card table-section">
+                    <h2>قائمة حالة المستفيدين</h2>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>اسم المستفيد</th>
+                                    <th>تاريخ التحديث</th>
+                                    <th>الحالة</th>
+                                    <th>المنطقة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-row" onclick="openBeneficiaryDetails('محمد عبدالمحسن', '2023-05-15', 'تم التحديث', 'الخالدية')">
+                                    <td>محمد عبدالمحسن</td>
+                                    <td>2023-05-15</td>
+                                    <td><span class="status-badge status-updated">تم التحديث</span></td>
+                                    <td>الخالدية</td>
+                                </tr>
+                                <tr class="table-row" onclick="openBeneficiaryDetails('أم حسن الالعودي', '2023-02-10', 'بحاجة تحديث', 'الشمالية')">
+                                    <td>أم حسن الالعودي</td>
+                                    <td>2023-02-10</td>
+                                    <td><span class="status-badge status-pending">بحاجة تحديث</span></td>
+                                    <td>الشمالية</td>
+                                </tr>
+                                <tr class="table-row" onclick="openBeneficiaryDetails('عبدالله العيسى', '2023-05-20', 'بيت دوري بريس', 'الشرقية')">
+                                    <td>عبدالله العيسى</td>
+                                    <td>2023-05-20</td>
+                                    <td><span class="status-badge status-approved">بيت دوري بريس</span></td>
+                                    <td>الشرقية</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                </div>
+
+                <!-- Beneficiaries View -->
+                <div id="view-beneficiaries" class="view">
+                    <section class="card">
+                        <h2>قائمة المستفيدين</h2>
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;align-items:center;">
+                            <input type="text" id="beneficiary-search" class="search-input" placeholder="ابحث بالاسم أو رقم الهوية أو المنطقة..." style="flex:1;" />
+                            <select id="beneficiary-filter-region" style="padding:0.5rem;border-radius:4px;border:1px solid #ddd;">
+                                <option value="">كل المناطق</option>
+                                <option>الخالدية</option>
+                                <option>الشمالية</option>
+                                <option>الشرقية</option>
+                            </select>
+                            <button id="beneficiary-clear" class="search-btn">مسح</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>اسم المستفيد</th>
+                                        <th>رقم الهوية</th>
+                                        <th>تاريخ الميلاد</th>
+                                        <th>آخر تحديث</th>
+                                        <th>الحالة</th>
+                                        <th>المنطقة</th>
+                                        <th>المتطوع المسؤول</th>
+                                        <th>إجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="beneficiaries-tbody">
+                                    <tr class="table-row" onclick="openBeneficiaryDetails('محمد عبدالمحسن', '2023-05-15', 'تم التحديث', 'الخالدية')">
+                                        <td>محمد عبدالمحسن</td>
+                                        <td>1023456789</td>
+                                        <td>1985-03-22</td>
+                                        <td>2023-05-15</td>
+                                        <td><span class="status-badge status-updated">تم التحديث</span></td>
+                                        <td>الخالدية</td>
+                                        <td>خالد القاسمي</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('سجل المتابعة','عرض سجلات المتابعة للمستفيد');">سجل</button></td>
+                                    </tr>
+                                    <tr class="table-row" onclick="openBeneficiaryDetails('أم حسن الالعودي', '2023-02-10', 'بحاجة تحديث', 'الشمالية')">
+                                        <td>أم حسن الالعودي</td>
+                                        <td>2034567891</td>
+                                        <td>1974-11-01</td>
+                                        <td>2023-02-10</td>
+                                        <td><span class="status-badge status-pending">بحاجة تحديث</span></td>
+                                        <td>الشمالية</td>
+                                        <td>مريم المحمود</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('طلب تحديث','إرسال تذكير بتحديث البيانات');">تذكير</button></td>
+                                    </tr>
+                                    <tr class="table-row" onclick="openBeneficiaryDetails('عبدالله العيسى', '2023-05-20', 'معتمد', 'الشرقية')">
+                                        <td>عبدالله العيسى</td>
+                                        <td>3045678912</td>
+                                        <td>1991-07-12</td>
+                                        <td>2023-05-20</td>
+                                        <td><span class="status-badge status-approved">معتمد</span></td>
+                                        <td>الشرقية</td>
+                                        <td>نور المطيري</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('تفاصيل الملف','عرض وتحرير الملف');">تحرير</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Volunteers View -->
+                <div id="view-volunteers" class="view">
+                    <section class="card">
+                        <h2>سجل المتطوعين</h2>
+                        <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap;">
+                            <input type="text" id="vol-search" class="search-input" placeholder="ابحث باسم المتطوع أو المنطقة..." style="flex:1;" />
+                            <select id="vol-filter-role" style="padding:0.5rem;border-radius:4px;border:1px solid #ddd;">
+                                <option value="">كل الأدوار</option>
+                                <option>منسق</option>
+                                <option>متابع</option>
+                                <option>مشرف</option>
+                            </select>
+                            <button id="vol-filter-btn" class="search-btn">تصفية</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>الاسم</th>
+                                        <th>الدور</th>
+                                        <th>ساعات هذا الشهر</th>
+                                        <th>مجموع الحالات</th>
+                                        <th>التقييم</th>
+                                        <th>حالة التفعيل</th>
+                                        <th>إجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <td onclick="openDetails('خالد القاسمي','سجل المتطوع ومؤشر الأداء')">خالد القاسمي</td>
+                                        <td>منسق</td>
+                                        <td>36</td>
+                                        <td>34</td>
+                                        <td>4.9</td>
+                                        <td>نشط</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('إرسال رسالة','إرسال رسالة إلى المتطوع');">رسالة</button></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td onclick="openDetails('مريم المحمود','سجل المتطوعة ومؤشر الأداء')">مريم المحمود</td>
+                                        <td>متابع</td>
+                                        <td>28</td>
+                                        <td>28</td>
+                                        <td>4.8</td>
+                                        <td>نشط</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('إدارة متطوع','تعديل الدور أو تعطيل المتطوع');">إدارة</button></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td onclick="openDetails('نور المطيري','سجل المتطوعة ومؤشر الأداء')">نور المطيري</td>
+                                        <td>مشرف</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>4.7</td>
+                                        <td>نشط</td>
+                                        <td><button class="search-btn" onclick="event.stopPropagation(); openDetails('تعيين حالة','تحديد حالة المتطوع');">حالة</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Management View -->
+                <div id="view-management" class="view">
+                    <section class="card">
+                        <h2>إدارة المستخدمين والصلاحيات</h2>
+                        <p style="color:var(--text-light);margin-bottom:1rem;">أدوات لإضافة مستخدم جديد، تعديل الدور، ومراجعة صلاحيات الوصول.</p>
+
+                        <div style="margin-bottom:1rem;display:flex;gap:0.5rem;align-items:center;">
+                            <button class="search-btn" onclick="openDetails('إضافة مستخدم','نموذج إضافة مستخدم جديد')">إضافة مستخدم</button>
+                            <button class="search-btn" onclick="openDetails('مزامنة الصلاحيات','مزامنة الصلاحيات مع النظام الخارجي')">مزامنة الصلاحيات</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>الاسم</th>
+                                        <th>البريد الإلكتروني</th>
+                                        <th>الدور</th>
+                                        <th>آخر تسجيل دخول</th>
+                                        <th>حالة</th>
+                                        <th>إجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>مدير النظام</td>
+                                        <td>admin@mutabaa.org</td>
+                                        <td>مشرف عام</td>
+                                        <td>2025-11-10</td>
+                                        <td>نشط</td>
+                                        <td><button class="search-btn" onclick="openDetails('تعديل صلاحيات','تعديل صلاحيات المشرف العام')">تعديل</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>أحمد الحسن</td>
+                                        <td>ahmed@mutabaa.org</td>
+                                        <td>منسق</td>
+                                        <td>2025-11-15</td>
+                                        <td>نشط</td>
+                                        <td><button class="search-btn" onclick="openDetails('تعديل صلاحيات','تعديل صلاحيات المنسق')">تعديل</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Reports View -->
+                <div id="view-reports" class="view">
+                    <section class="card">
+                        <h2>التقارير</h2>
+                        <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap;">
+                            <select id="report-type" style="padding:0.5rem;border-radius:4px;border:1px solid #ddd;">
+                                <option value="all">كل أنواع التقارير</option>
+                                <option value="monthly">تقارير شهرية</option>
+                                <option value="cases">تقارير الحالات</option>
+                                <option value="volunteers">تقارير المتطوعين</option>
+                            </select>
+                            <input type="date" id="report-from" />
+                            <input type="date" id="report-to" />
+                            <button class="search-btn" id="report-filter">عرض</button>
+                            <button class="export-btn" data-report-id="all">تصدير الكل</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>اسم التقرير</th>
+                                        <th>النوع</th>
+                                        <th>تاريخ الإنشاء</th>
+                                        <th>المسؤول</th>
+                                        <th>حالة</th>
+                                        <th>إجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>تقرير متابعة أبريل</td>
+                                        <td>شهري</td>
+                                        <td>2025-04-30</td>
+                                        <td>أحمد الحسن</td>
+                                        <td>جاهز</td>
+                                        <td><button class="export-btn" data-report-id="rpt-2025-04">تصدير</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>تقرير حالات معقدة</td>
+                                        <td>حالات</td>
+                                        <td>2025-10-12</td>
+                                        <td>مريم المحمود</td>
+                                        <td>قيد المعالجة</td>
+                                        <td><button class="export-btn" data-report-id="rpt-2025-cases">تصدير</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Settings View -->
+                <div id="view-settings" class="view">
+                    <section class="card">
+                        <h2>إعدادات النظام</h2>
+                        <form id="settings-form" style="margin-top:1rem;">
+                            <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.8rem;">
+                                <label><input type="checkbox" name="emailNotifications" checked /> إشعارات البريد الإلكتروني</label>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.8rem;">
+                                <label><input type="checkbox" name="autoExport" /> تفعيل التصدير التلقائي للتقارير</label>
+                            </div>
+                            <div style="display:flex;gap:0.5rem;margin-top:1rem;">
+                                <button type="button" class="search-btn" onclick="event.preventDefault(); openDetails('حفظ الإعدادات','تم حفظ الإعدادات مؤقتًا')">حفظ</button>
+                                <button type="button" class="search-btn" onclick="event.preventDefault(); openDetails('استعادة الإعدادات','تم استعادة الإعدادات الافتراضية')">استعادة الافتراضي</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <!-- Messages View -->
+                <div id="view-messages" class="view">
+                    <section class="card">
+                        <h2>الرسائل</h2>
+                        <div style="display:flex;gap:1rem;">
+                            <div style="width:40%;border-right:1px solid #e8e8e8;padding-right:1rem;">
+                                <input type="text" id="msg-search" class="search-input" placeholder="بحث في الرسائل..." style="width:100%;margin-bottom:0.8rem;" />
+                                <div class="message-list">
+                                    <div class="message-row" data-subject="تذكير بتحديث" data-body="يرجى تحديث بيانات المستفيد محمد" data-from="أحمد الحسن">تذكير بتحديث — من أحمد الحسن</div>
+                                    <div class="message-row" data-subject="تقرير جديد" data-body="تم رفع تقرير جديد للمستفيد سارة" data-from="مريم المحمود">تقرير جديد — من مريم المحمود</div>
+                                    <div class="message-row" data-subject="اجتماع منسقين" data-body="دعوة لحضور اجتماع المنسقين يوم الاثنين" data-from="مدير النظام">اجتماع منسقين — من مدير النظام</div>
+                                </div>
+                            </div>
+                            <div style="flex:1;padding-left:1rem;">
+                                <div id="message-preview">
+                                    <h3>اختر رسالة لعرض التفاصيل</h3>
+                                    <p class="metric-sub">تفاصيل الرسائل ستظهر هنا عند اختيار أي رسالة من القائمة.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">تفاصيل</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-close" onclick="closeModal()">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="exact-dashboard.js"></script>
+</body>
+</html>
